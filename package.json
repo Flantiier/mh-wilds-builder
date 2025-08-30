@@ -1,17 +1,20 @@
 {
   "name": "mh-wilds-builder",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "homepage": "https://Flantiier.github.io/mh-wilds-builder",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "update-cache": "node ./scripts/update-cache.js",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tailwindcss": "^4.1.12"
